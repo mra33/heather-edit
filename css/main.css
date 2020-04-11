@@ -706,10 +706,28 @@ display: flex;
 
 }
 
+//*** Headshots/gallery page ****//
 
+.pic-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
 
+.columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
 
-
+.pic-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -944,6 +962,15 @@ display: flex;
   .projects {
 	  width: 70%;
   }
+  
+  .columns {
+     -webkit-column-count: 2;
+     -moz-column-count: 2;
+     column-count: 2;
+     -webkit-column-width: 50%;
+     -moz-column-width: 50%;
+     column-width: 50%;
+   }
 
   
   /*---------- DESKTOP ----------*/
@@ -1060,6 +1087,18 @@ display: flex;
 
 	  .projects {
 		  width:50%;
+	  }
+	  
+	  .columns {
+	    -webkit-column-count: 3;
+	    -moz-column-count: 3;
+	    column-count: 3;
+	    -webkit-column-gap: 20px;
+	    -moz-column-gap: 20px;
+	    column-gap: 20px;
+	    -webkit-column-width: 33.33333333333333%;
+	    -moz-column-width: 33.33333333333333%;
+	    column-width: 33.33333333333333%;
 	  }
 	
 	
