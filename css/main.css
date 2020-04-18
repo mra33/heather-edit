@@ -106,19 +106,13 @@ html {
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-content: center;
+	font-size: 1em;
+	color: #373737;
 }
 
 .container {
-	max-width: 1200px;
-    width: 100%;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+    width: 90%;
+	margin: 50px 0;
   
 }
 
@@ -126,16 +120,57 @@ h1 {
 	font-family: 'Abril Fatface', cursive;
 }
 
+h3 {
+	font-family: 'Oswald', sans-serif;
+	color:#08A6A6;
+}
 
+.contact h2, 
+.work h2,
+.about h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 2.5em;
+	text-align: center;
+}
 
 p {
 	font-family: 'Oswald', sans-serif;
+	font-size: 1.1em;
 }
 
-figure {
+figure, 
+img {
 	margin: 0;
 }
 
+img { 
+	width: 100%;
+}
+
+a { 
+	text-decoration: none;
+ }
+
+/*--- all video embeds ---*/
+
+.video-wrapper {
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.video-wrapper iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* --- header styling on all pages ---*/
 
 header {
     display: flex;
@@ -143,13 +178,11 @@ header {
     align-content: center;
 	align-items: center;
     flex-flow: row wrap;
-	width: 100%;
-	margin: 0 50px;
+
 	
 }
 
 header h1 {
-	width: 90%;
 	text-align: center;
 	border-bottom: 2px solid #F21DB9;
 	font-size: 4em;
@@ -161,7 +194,6 @@ header h1 span {
 }
 
 header figure {
-	width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,14 +201,6 @@ header figure {
 	
 }
 
-
-
-
-header .header-img {
-	width: 98%;
-	margin-bottom: 50px;
-
-}
 
 
 nav {
@@ -211,14 +235,11 @@ nav ul li:hover {
 nav ul li img {
 	padding-right: 6px;
 	opacity: .4;
+	width: 5%;
 }
 
 nav ul li a {
-	
-	text-decoration: none;
-	
 	color: #F272A1;
-	
 }
 
 
@@ -230,16 +251,9 @@ nav ul li a {
     justify-content: center;
 	align-content: center;
     align-items: center;
-	width: 100%;
-	margin: 0 10px;
-	
-	
 }
 
-
-
 #main h2 {
-	
 	color: #F272A1;
 	font-size: 2.3em;
 	font-family: 'Oswald', sans-serif;
@@ -252,8 +266,7 @@ nav ul li a {
     align-items: center;
 	text-align: center;
 	flex-flow:row wrap;
-	width: 70%;
-	
+
 }
 
 #main span {
@@ -261,21 +274,27 @@ nav ul li a {
 	font-size: 1.2em;
 }
 
-/!=====CAT=====!/
+/******CONTACT******/
 
-.cat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	flex-flow: row wrap;
-	width: 50%;
-	display: hidden;
+.contact {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+  	flex-flow: row wrap;
 	
+}
 
+.contact p {
+	margin: 1em;
 }
 
 
-/*******CONTACT FORM*********/
+.contact h2 {
+    display: flex;
+    justify-content: center;
+	width: 100%;
+}
+
 
 .form {
 	margin-bottom: 2em;
@@ -290,7 +309,6 @@ nav ul li a {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.2em;
-
 	
 }
 
@@ -337,25 +355,11 @@ input[type=submit]:hover {
 }
 
 
+/****Social Media Links***/
 
-
-
-/******CONTACT******/
-
-
-.contact {
-	display: flex;
-	text-align: center;
-  	flex-flow: row wrap;
-	width: 100%;
-}
 
 .contact-items {
 	width: 100%;
-	
-	
-   
-	
 }
 
 
@@ -364,111 +368,65 @@ input[type=submit]:hover {
     justify-content: center;
     align-items: center;
 	flex-flow: row wrap;
-	color: #F21DB9;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.2em;
-
-}
-
-.contact figure {
-	padding-bottom: 10%;
-}
-.contact figure .social-icons {
-	width: 20%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-
-}
-
-
-
-.contact h2 {
-	font-family: 'Abril Fatface', cursive;
-	font-size: 2.5em;
-	text-align: center;
-    display: flex;
-    justify-content: center;
-	width: 100%;
-}
-
-
-.contact-text  {
 	font-size: 1.5em;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
-
+	color: #F21DB9;
+	text-transform: uppercase;
 }
 
-
-
-.contact a {
-	text-decoration: none;
-}
 
 .contact a img:hover{
 	opacity:.2;
 }
 
+.contact figure {
+	padding-bottom: 10%;
+}
+
+.contact figure .social-icons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contact img {
+	width: 10%;
+}
 
 /******WORK******/
 
-
+.work {
+	display: flex;
+	justify-content: center;
+}
 .work-content {
     display: flex;
    flex-flow: row wrap;
-   align-items: center;
-   justify-content: center;
+ 
  
 }
 
 .work figure {
 	display: flex;
-	justify-content: center;
 	margin-bottom: 40px;
 	flex-flow: row wrap;
-	align-items: flex-start;
-	align-content: center;
 	
-	
-
 }
 
-.work-img {
-	width: 80%;
-}
 
 .work-text {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-flow: row wrap;
 	margin-bottom: 40px;
-	width: 60%;
-}
-
-
-.work h3 {
-	font-family: 'Oswald', sans-serif;
-	text-align:center;
-	color:#08A6A6 ;
 
 }
 
-.work h2 {
-	font-family: 'Abril Fatface', cursive;
-	font-size: 2.5em;
-	text-align: center;
-
-}
 
 .work p {
-	font-size: 1.1em;
 	text-align: center;
 }
-
-
 
 
 /*******ABOUT******/
@@ -480,15 +438,21 @@ input[type=submit]:hover {
     justify-content: center;
 	align-items: center;
     flex-flow: row wrap;
-	width: 100%;
+
 }
 
-.about-img {
-	width: 60%;
+.about figure {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+	padding-bottom: 40px;
+	margin: 0 5%;
+	
 }
 
-.about-img {
+.about img {
 	border: 1.5px solid white;
+	
 }
 
 .about-content {
@@ -498,31 +462,9 @@ input[type=submit]:hover {
  
 }
 
-.about figure {
-	width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-	padding-bottom: 40px;
-	
-}
-
-.about h2 {
-	font-family: 'Abril Fatface', cursive;
-	font-size: 2.5em;
-	text-align: center;
-    display: flex;
-    justify-content: center;
-	width: 100%;
-	
-}
 
 .about p {
-	font-size: 1.1em;
-	padding: 0 60px;
-	width: 50%;
- 
-
+	padding: 0 5%;
 }
 
 .about p span {
@@ -533,62 +475,57 @@ input[type=submit]:hover {
 
 /*-------BACK TO TOP LINK//*-------FOOTER------*/
 
+footer {
+	color: #F272A1;
+	
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+
+
 .footer-content {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
 	align-items: center;
-	width: 40%;
 	text-align: center;
-}
-
-footer {
-	
-	color: #F272A1;
 	border-top: 2px solid #F21DB9;
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-	align-items: center;
-	padding: 10px;
-	margin-top:20px;
 }
-
 
 footer h3 {
 	font-size: 1.5em;
-	font-family: 'Oswald', sans-serif;
 }
 
-
 footer a {
-	text-decoration: none;
 	color:  #F21DB9;
 	text-transform: uppercase;
-
-	
 }
 
 footer a:hover {
 	opacity: .3;
 }
 
-
 .footer-content p {
 	font-size: .8em;
 	text-transform: uppercase;
-
 }
 
 
 /******REEL/RESUME PAGE******/
 
-.reel,
-.resume {
-	width: 25%;
-display: flex;
-	justify-content: center;
+
+
+.resume-reel-content {
+    display: flex;
+    justify-content: center;
+	align-content: center;
 	align-items: center;
+    flex-flow: row wrap;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .resume h3 {
@@ -598,35 +535,22 @@ display: flex;
 
 }
 
-.reel h3,
-.resume h3 {
-	font-family: 'Oswald', sans-serif;
-	color:#08A6A6 ;
-}
-
-.resume-reel-content {
-	width: 100%;
-    display: flex;
-    justify-content: center;
-	align-content: center;
+.reel,
+.resume {
+	display: flex;
+	justify-content: center;
 	align-items: center;
-    flex-flow: row wrap;
-	text-align: center;
-	margin-bottom: 20px;
+	
 	
 }
-
-
 
 
 .resume-reel-content .resume-icon-page {
 	width: 7%;
 	padding-bottom: 4%;
-	
 }
 
 .resume-reel-content a {
-	text-decoration: none;
 	color: #F21DB9;
 	font-family: 'Abril Fatface';
 	font-size: 1.3em;
@@ -640,25 +564,6 @@ display: flex;
 	text-decoration: underline;
 }
 
-.video-wrapper {
-	height: 0;
-	padding-bottom: 56.25%;
-	overflow: hidden;
-	position: relative;
-	width: 90%;
-	display: flex;
-	flex-flow: row wrap;
-}
-
-.video-wrapper iframe {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-
 /******PROJECTS/VIDEO PAGE*****/
 
 .projects {
@@ -667,44 +572,11 @@ display: flex;
 	align-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	width: 100%;
-
-}
-
-
-
-
-.projects h3 {
-	font-family: 'Oswald', sans-serif;
-	color: #08A6A6 ;
-  
-	
-}
-
-/* -- Responsive video embed -- */
-
-
-
-.project-wrapper {
-  padding-bottom: 56.25%; /* for square ratio */
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  width: 90%;
-  display: flex;
-  flex-flow: row wrap;
+	text-align: center;
 
 
 }
 
-.project-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-}
 
 //*** Headshots/gallery page ****//
 
@@ -724,7 +596,6 @@ display: flex;
   }
 
 .pic-container img {
-  width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
@@ -820,73 +691,84 @@ display: flex;
 
 
 @media (min-width: 768px) {
-	.header-img {
-		width: 100%;
+	
+	
+    header h1 {
+  	  font-size: 3.7em;
+  	 
+    }
+  
+    .contact .form {
+	width: 45%;
+  	  margin: 0;
+    }
+  
+	.contact div {
+		display: flex;
+		flex-flow: row wrap;
+	}
+    .contact .contact-items{
+		display: flex;
+		flex-flow: column wrap;
+  	  width: 45%;
+	  margin: 0;
+	 
+    }
+
+  
+  .contact   .contact-text,
+  .form-title {
+  	   font-size: 1.3em;
+    }
+	
+	.contact img {
+		width: 10%;
 	}
 
-  .about-content {
-	  width: 50%;
-  }
+   
   
-  
-  .work figure, 
-  .work-text {
-	 width: 45%;
-	
-  }
-  
+   input[type=submit] {
+  	  width: 50%;
+    }
 
-  .contact {
-	  width: 80%;
-  }
-  
-  .contact-items {
-	  display: flex;
-	  flex-flow: column wrap;
-	  align-items: center;
-	  width: 25%;
+	#main {
+		margin: 0 20%;
+	}
 	
+    .work figure {
+  	 width: 45%;
 	 
+    }
+	
+    .work-text {
+  	  width: 45%;
+  	  padding:0 15px;
+    }
+  
+    .about div {
+  	  display: flex;
+  	  flex-flow: row wrap;
+    }
+ 
+  .about-content {
+	  width: 40%;
+	  display: flex;
+	   flex-flow: row wrap;
   }
   
-.contact   .contact-text {
-	   font-size: 1.3em;
-	   padding-top: 40%;
-
-  }
   
-
- figure .social-icon  {
-	  width:78%;
-	  padding-bottom: 25%;
+  .about h2 {
+	  width: 100%;
   }
   
   
- .contact .contact-form {
+  .about figure {
 	  width: 50%;
-	  margin: 0 45px;
-  }
-  
-  .contact .form-title {
-	  width: 60%;
-	  font-size: 1.3em;
-	
-	
-  }
-  
-  .contact .form {
-	  width: 70%;
-	  margin: 0;
+	  display: flex;
 	  flex-flow: row wrap;
   }
-  
- input[type=submit] {
-	  width: 50%;
-  }
  
-  .about .about-img {
-	  width: 80%;
-  }
+ 
   
   .about p {
 	  width: 70%;
@@ -894,37 +776,31 @@ display: flex;
 	  font-size: 1.3em;
   }
   
-  .work-img {
-	  width: 100%;
-  }
-  
-  .work-text {
-	  width: 40%;
-	  padding:0 10px;
-  }
   
   .footer-content {
 	  width: 30%;
+	  align-content: center;
+	  margin: 0 35%;
   }
   
-  header h1 {
-	  font-size: 3.7em;
-	  width: 100%;
-  }
   
-  #main {
-	  width: 60%;
-  }
- 
-
-/!================================================================
-=============RESUME AND REEL PAGE TABLET ==============================!/
-  
+  /*---- resume and reel page ----*/
 .reel h3,
 .resume h3 {
 	font-size: 2em;
 }
 
+.resume h3 {
+	padding-bottom: 30%;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+.resume-reel-content {
+	width: 45%;
+}
 .resume-reel-content a {
 	font-size: 1.6em;
 	
@@ -941,27 +817,19 @@ display: flex;
 
 }
 
-.reel {
-	width: 50%;
-}
 
-.resume {
-	width: 50%
-}
-  .resume-reel-content {
-	  width: 50%;
-  }
   
-  /!================================================================
-  =============PROJECTS PAGE TABLET ==============================!/
+  /*---- Project page ----*/
   
   .projects h3 {
 	  font-size: 1.5em;
   }
   
   .projects {
-	  width: 70%;
+	  width: 100%;
   }
+  
+  /*--- gallery page ---*/
   
   .columns {
      -webkit-column-count: 2;
@@ -979,12 +847,6 @@ display: flex;
 
   @media (min-width: 1200px) {
   	
-	
-	
-      header {
-          
-		  
-      }
 	  
       header nav {
           width: 100%;
@@ -1000,94 +862,86 @@ display: flex;
 		  padding: 0 22px;
 		  font-size: 1em;
 	  }
+	  
+	  nav ul li img {
+		  width: 10%;
+	  }
+	  
 	  header h1 {
 		  font-size: 4.4em;
 	  }
+	  
 	  .footer-content {
 		  width: 20%;
 	  }
 	  
-	  .work-text {
-		  width: 30%;
-		  font-size: 1.3em;
-	  }
-	  
-	  #main {
-		  width: 50%;
+	  .contact div {
+		  margin: 0 10%;
 		  
 	  }
-
-	  .contact {
-		  width: 90%;
-		  background-image: url('../img/hero-image.png');
-		  background-size: cover;
-		  background-repeat: no-repeat;
+	  
+	  .contact .form-title {
+		  font-size: 2em;
+		  margin-bottom: .5em;
 	  }
 	  
-	
-
-	  .contact-items {
-		  display: flex;
-		  flex-flow: column wrap;
-		  align-items: center;
-		  width: 10%;
-		  margin: 0% 1%;
-		  padding: 3%;
-	
-		
+	  .contact .container {
+		  background-image: url('../img/contact.jpg');
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  
+	  }
+	  
+	  .contact .form {
+		  padding-bottom: 5%;
 	  }
   
 	.contact   .contact-text {
 		   font-size: 1.1em;
-		   margin-top: 0%;
-		   
 
 	  }
+	  
+	  .wrapper {
+		  margin: 0 10%;
+	  }
   
+	  #main {
+		  margin: 0 28%;
+	  }
+  
+	  .footer-content {
+		  width: 20%;
+		  margin: 0 40%;
+	  }
 
-	 figure .social-icon  {
-		  width:70%;
-		  padding-bottom: 30%;
-	  }
-  
-  
-	 .contact .contact-form {
-		  width: 70%;
-		  margin: 0;
-		 
-	  }
-  
-	  .contact .form-title {
-		  width: 80%;
-		  font-size: 1.8em;
-		  padding: 0;
-		  margin: 2% 0;
-	
-	
-	  }
-  
-	  .contact .form {
-		  width: 50%;
-		  margin: 2% 5% 1% 10%;
-		  padding: 0;
-		  flex-flow: row wrap;
-	  }
-  
 	 input[type=submit] {
 		  width: 40%;
 	  }
+	  
+	
 
-
+	  .work-text {
+		  width: 30%;
+		  font-size: 1.2em;
+		  padding: 0 3%;
+	  }
+	  
+	  
+	  .work figure {
+		  width: 60%;
+	  }
+	
   
 	  .about-content p {
 		  width: 100%;
 		  font-size: 1.4em;
 	  }
 	  
-
 	  .projects {
-		  width:50%;
+		  width: 70%;
+		  margin: 0 15%;
 	  }
+	  
 	  
 	  .columns {
 	    -webkit-column-count: 3;
@@ -1096,9 +950,9 @@ display: flex;
 	    -webkit-column-gap: 20px;
 	    -moz-column-gap: 20px;
 	    column-gap: 20px;
-	    -webkit-column-width: 33.33333333333333%;
-	    -moz-column-width: 33.33333333333333%;
-	    column-width: 33.33333333333333%;
+	    -webkit-column-width: 33%;
+	    -moz-column-width: 33%;
+	    column-width: 33%;
 	  }
 	
 	
